@@ -1,0 +1,151 @@
+<style>
+  .container {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .header {
+    display: flex;
+    width: 95%;
+    height: 10vh;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+    box-shadow: 10px black;
+  }
+
+  .menu {
+    width: 40%;
+  }
+
+  .menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .menu-btn {
+    box-shadow: 2px 2px 5px rgb(255, 145, 182);
+    border: 2px solid rgb(255, 145, 182);
+    border-radius: 100px;
+    text-decoration: none;
+    color: rgb(216, 125, 143);
+    text-transform: uppercase;
+    border-radius: 100px;
+    padding: 10px;
+  }
+
+  .menu-btn:hover {
+    background-color: rgb(255, 248, 251);
+  }
+
+  .search {
+    color: rgb(216, 125, 143);
+    text-transform: uppercase;
+  }
+
+  .main {
+    padding: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .card .picture {
+    padding: 20px;
+
+  }
+
+  .card .picture img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 270px;
+    height: 480px;
+  }
+
+  .card label {
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(255, 173, 199);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgb(114, 114, 114);
+  }
+
+  .anthem h1 {
+    font-size: 60px;
+    text-shadow: 2px 2px 2px rgb(255, 145, 182),
+      -2px 1px 3px rgb(255, 145, 182);
+    ;
+    color: rgb(252, 221, 231);
+    transition: all .5s;
+  }
+</style>
+
+<div class="container">
+  <div class="header">
+    <div class="logo">
+      <img src="./280x80.jpg" width="280" height="80" alt="" srcset="">
+    </div>
+    <div class="search">
+      <input type="search" name="search" id="search">
+      <label for="search">Find meme</label>
+    </div>
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="#" class="menu-btn">Tomatoes</a>
+        </li>
+        <li>
+          <a href="#" class="menu-btn">Students</a>
+        </li>
+        <li>
+          <a href="#" class="menu-btn">Boss</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+  <div class="main">
+    <div class="card">
+      <div class="picture">
+        <img src="./xan.jpg" alt="" srcset="">
+      </div>
+      <label for="">ХАН</label>
+    </div>
+    <div class="card">
+      <div class="picture">
+        <img src="./tusya.jpg" alt="" srcset="">
+      </div>
+      <label for="">JEWSUS</label>
+    </div>
+    <div class="card">
+      <div class="picture">
+        <img src="./vodila.jpg" alt="" srcset="">
+      </div>
+      <label for="">MR. KRASAVA</label>
+    </div>
+    <div class="card">
+      <div class="picture">\
+        <img src="./boshka.jpg" alt="" srcset="">
+      </div>
+      <label for="">BOSHKA</label>
+    </div>
+  </div>
+  <div class="anthem">
+    <h1>GUARANTED BEST SOFTWARE</h1>
+  </div>
+</div>
